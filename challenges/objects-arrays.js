@@ -92,10 +92,11 @@ console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 
-let uni = [];                  
+const uni = [];                  
 
 for (let i = 0; i < graduates.length; i++) {
-  
+  if(graduates[i].university.indexOf("Uni") !== -1) //this code says loop through, narrow down to the array>university>indexOf to match the argument(?) and if it does not equal to false (-1) meaning it would return true, oush it to the uni new array
+  uni.push(graduates[i].university);
 }
 
 console.log (uni);
