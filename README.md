@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+While they both loop through all of the items in an array, the .forEach only prints out the items in the array one by one while .map creates an entire new array.
+
 2. What is the difference between a function and a method?
+
+Methods are functions but within an object or class.
 
 3. What is closure?
 
+Closure is when the access can reach within but not outwards. 
+
 4. Describe the four rules of the 'this' keyword.
 
+Each rule of the this keyword determines how the this word will work. Implicit automatically tells this to look left of the dot. Window is like an error and opens up the window within the console. Explicit utilized .call, .apply, and .bind. New is the last one and creates a new object.
+
 5. Why do we need super() in an extended class?
+
+super() is the keyword that gives access to the dunctions of the parent.
 
 ## Project Set up
 
