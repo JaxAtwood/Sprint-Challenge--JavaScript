@@ -18,29 +18,30 @@ function consume (a, b, cb) {
 */
 
 function add (a, b) {
-  return cb(a + b);
+  console.log (a + b);
 }
 
-function multiply (a, b) {
-  return cb(a * b);
+function multiply(a, b) {
+  console.log (a * b);
 }
 
-function greeting (first, last) {
-  return `Hello ${first} ${last}, nice to meet you!`
+function greeting(first, last) {
+  console.log(`Hello ${first} ${last}, nice to meet you!`);
 }
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
-
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
-
 // Explanation: 
 
+
+//Answer:
+//nestedfunction() is an example of a closure. Closures have the ability to reach outwards but not inwards. 
 
 const external = "I'm outside the function";
 
